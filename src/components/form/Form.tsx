@@ -26,7 +26,7 @@ const Form = () => {
       return;
     }
 
-    if (!formData.email.trim() || emailCheck.test(formData.email.trim())) {
+    if (!formData.email.trim() || !emailCheck.test(formData.email.trim())) {
       setErrorText('Email is required');
       return;
     }
