@@ -1,30 +1,77 @@
 'use client';
-import { agriczoneObjectiveData } from '@/utils/data';
+import {
+  agriczoneObjectiveData,
+  expertPictureData,
+  traderPictureData,
+  farmProducePictureData,
+} from '@/utils/data';
+import { Divider } from '@mui/material';
 import React from 'react';
 // import Fade from 'react-reveal/Fade';
-import { Fade } from 'react-awesome-reveal';
+
+import Marquee from 'react-fast-marquee';
 
 const AgricZoneObjective = () => {
   return (
     <>
-      <div className="h-full md:min-h-screen w-full md:w-3/6 grid place-items-center agriczone--objective--bg p-4">
-        <div>
-          <h2 className="text-3xl bg--glass p-4 rounded-md mb-10 text-white">
+      <div className="h-full md:min-h-screen w-full place-items-center  md:w-3/6 grid">
+        <Marquee className="container--image--experts">
+          {expertPictureData.map((item) => (
+            <img
+              key={item.id}
+              src={`${item.image}`}
+              alt={item.image}
+              className="w-72 mx-2 h-48 rounded-md shadow-md object-cover"
+            />
+          ))}
+        </Marquee>
+        <Marquee
+          style={{
+            margin: '1rem 0 1rem 0',
+          }}
+          direction="right"
+          className="container--image--marketplace"
+        >
+          {farmProducePictureData.map((item) => (
+            <img
+              key={item.id}
+              src={`${item.image}`}
+              alt={item.image}
+              className="w-72 mx-2 h-48 rounded-md shadow-md object-cover"
+            />
+          ))}
+        </Marquee>
+        <Marquee className="container--image--traders">
+          {traderPictureData.map((item) => (
+            <img
+              key={item.id}
+              src={`${item.image}`}
+              alt={item.image}
+              className="w-72 mx-2 rounded-md shadow-md h-48 object-cover"
+            />
+          ))}
+        </Marquee>
+      </div>
+
+      {
+        <div className="md:hidden">
+          <h2 className="text-2xl p-4 rounded-md ">
             Curious to know what Agric Zone is all about?
           </h2>
 
-          <div className="bg--glass rounded-md">
-            <ul className="marker:text-green-500 marker:text-2xl list-outside my-10 p-4 mx-6 list-disc ">
+          <div className="rounded-md">
+            <ul className="marker:text-green-500 marker:text-2xl list-outside p-4 mx-6 list-disc ">
               {agriczoneObjectiveData.map((item) => (
-                <li className="text-slate-50 mb-4" key={item.id}>
+                <li className=" text-slate-700 mb-4" key={item.id}>
                   {item.text}
                 </li>
               ))}
             </ul>
           </div>
         </div>
-      </div>
-      <div className="md:hidden space-y-2 p-4 my-10">
+      }
+      <Divider />
+      <div className="md:hidden space-y-2 px-8 my-10">
         <p>Want to partner with us on this amazing journey? </p>
         <p>
           Send us a mail{' '}

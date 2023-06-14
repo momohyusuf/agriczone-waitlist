@@ -5,20 +5,20 @@ import { Metadata } from 'next';
 export async function generateMetadata(): Promise<Metadata> {
   // read route params
   return {
-    title: 'Waitlist | Agric zone',
+    title: 'Join Our Waitlist',
     description:
       'Making agriculture profitable, exciting and innovative for farmers',
     openGraph: {
       type: 'website',
       url: 'https://agriczone.com',
-      title: 'Waitlist | Agric zone',
+      title: 'Join Our Waitlist',
       description:
         'Making agriculture profitable, exciting and innovative for farmers',
       siteName: 'Agric zone',
       images: `/agric_zone_logo.png`,
     },
     twitter: {
-      title: 'Waitlist | Agric zone',
+      title: 'Join Our Waitlist',
       card: 'summary_large_image',
       site: 'https://agriczone.com',
       creator: 'Agric zone',
