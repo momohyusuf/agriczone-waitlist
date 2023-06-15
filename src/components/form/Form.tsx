@@ -92,7 +92,7 @@ const Form = () => {
         />
         <div>
           <h1 className="text-4xl mb-6">Join our waitlist</h1>
-          <p className="text-xl text-slate-700">
+          <p className="text-xl dark:text-slate-100 text-slate-700">
             Join our waitlist and be among the pioneers to experience our
             groundbreaking Agricultural platform.
           </p>
@@ -154,7 +154,7 @@ const Form = () => {
             Join waitlist
           </LoadingButton>
         </form>
-        <div className="hidden md:block space-y-2 text-slate-700">
+        <div className="hidden md:block space-y-2 dark:text-slate-100 text-slate-700">
           <p>
             Want to partner with us on this amazing journey?{' '}
             <Button

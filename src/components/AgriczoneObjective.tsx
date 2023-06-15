@@ -55,14 +55,17 @@ const AgricZoneObjective = () => {
 
       {
         <div className="md:hidden">
-          <h2 className="text-2xl p-4 rounded-md ">
+          <h2 className="text-2xl mt-10 p-4 rounded-md ">
             Curious to know what Agric Zone is all about?
           </h2>
 
           <div className="rounded-md">
             <ul className="marker:text-green-500 marker:text-2xl list-outside p-4 mx-6 list-disc ">
               {agriczoneObjectiveData.map((item) => (
-                <li className=" text-slate-700 mb-4" key={item.id}>
+                <li
+                  className=" dark:text-slate-100 text-slate-700 mb-4"
+                  key={item.id}
+                >
                   {item.text}
                 </li>
               ))}
@@ -71,7 +74,7 @@ const AgricZoneObjective = () => {
         </div>
       }
       <Divider />
-      <div className="md:hidden text-slate-700 space-y-2 px-8 my-10">
+      <div className="md:hidden dark:text-slate-100 text-slate-700 space-y-2 px-8 my-10">
         <p>Want to partner with us on this amazing journey? </p>
         <p>
           Send us a mail{' '}
