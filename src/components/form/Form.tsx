@@ -67,7 +67,7 @@ const Form = () => {
         openFindOutMore={openFindOutMore}
         setOpenFindOutMore={setOpenFindOutMore}
       />
-      <div className="bg-white space-y-10 px-4 py-4 lg:px-16 md:h-screen items-center justify-center">
+      <div className="space-y-10 px-4 py-4 lg:px-16 md:h-screen items-center justify-center">
         <Collapse in={isSuccess}>
           <Alert
             severity="success"
@@ -109,6 +109,10 @@ const Form = () => {
             onChange={handleInputs}
             required
             fullWidth
+            sx={{
+              bgcolor: 'white',
+              borderRadius: '0.5rem',
+            }}
             error={errorText === 'Full name is required'}
             helperText={
               errorText === 'Full name is required' && 'Full name is required'
@@ -124,6 +128,10 @@ const Form = () => {
             value={formData.email}
             onChange={handleInputs}
             required
+            sx={{
+              bgcolor: 'white',
+              borderRadius: '0.5rem',
+            }}
             error={errorText === 'Email is required'}
             helperText={
               errorText === 'Email is required' && 'Email is required'

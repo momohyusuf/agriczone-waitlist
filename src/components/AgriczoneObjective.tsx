@@ -71,7 +71,7 @@ const AgricZoneObjective = () => {
         </div>
       }
       <Divider />
-      <div className="md:hidden space-y-2 px-8 my-10">
+      <div className="md:hidden text-slate-700 space-y-2 px-8 my-10">
         <p>Want to partner with us on this amazing journey? </p>
         <p>
           Send us a mail{' '}
