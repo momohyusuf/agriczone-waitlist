@@ -100,8 +100,8 @@ const Form = () => {
         <form className="flex flex-col items-center justify-center gap-y-10">
           <TextField
             id="filled-basic"
-            label="Full name"
-            variant="outlined"
+            placeholder="Full name"
+            variant="standard"
             color="success"
             size="small"
             name="first_name"
@@ -121,8 +121,8 @@ const Form = () => {
           <TextField
             id="filled-basic"
             color="success"
-            label="Email"
-            variant="outlined"
+            placeholder="Email"
+            variant="standard"
             size="small"
             name="email"
             value={formData.email}
