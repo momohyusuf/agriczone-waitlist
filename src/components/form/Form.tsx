@@ -103,7 +103,7 @@ const Form = () => {
             placeholder="Full name"
             variant="standard"
             color="success"
-            size="small"
+            size="medium"
             name="first_name"
             value={formData.first_name}
             onChange={handleInputs}
@@ -123,7 +123,7 @@ const Form = () => {
             color="success"
             placeholder="Email"
             variant="standard"
-            size="small"
+            size="medium"
             name="email"
             value={formData.email}
             onChange={handleInputs}
