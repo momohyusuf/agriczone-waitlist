@@ -99,11 +99,10 @@ const Form = () => {
         </div>
         <form className="flex flex-col items-center justify-center gap-y-10">
           <TextField
-            id="filled-basic"
+            id="outlined-basic"
             placeholder="Full name"
-            variant="standard"
+            variant="outlined"
             color="success"
-            size="medium"
             name="first_name"
             value={formData.first_name}
             onChange={handleInputs}
@@ -119,11 +118,10 @@ const Form = () => {
             }
           />
           <TextField
-            id="filled-basic"
+            id="outlined-basic"
             color="success"
             placeholder="Email"
-            variant="standard"
-            size="medium"
+            variant="outlined"
             name="email"
             value={formData.email}
             onChange={handleInputs}
